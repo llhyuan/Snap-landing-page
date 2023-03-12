@@ -4,7 +4,7 @@
   h4 {
     font-weight: normal;
     margin: 0 0 1.5rem 0;
-    text-align: center;
+    text-align: left;
 
     img {
       width: 1rem;
@@ -19,7 +19,7 @@
       color: v.$color-mainText;
       &:hover {
         cursor: pointer;
-      } 
+      }
     }
   }
   ul {
@@ -35,6 +35,17 @@
   }
   .hide-background {
     background-color: inherit;
+    box-shadow: inherit;
+  }
+}
+
+.list-item {
+  a {
+    text-decoration: none;
+    color: v.$color-mainText;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -56,8 +67,8 @@
       top: 0;
       border-radius: 0.8rem;
       background-color: v.$color-background;
+      box-shadow: -2px 2px 5px v.$color-boxShadow;
       z-index: auto;
     }
-    
   }
 }

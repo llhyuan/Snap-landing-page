@@ -22,6 +22,7 @@
     max-width: 250px;
     height: 100vh;
     background-color: v.$color-background;
+    box-shadow: -2px 2px 5px v.$color-boxShadow;
     padding: 1rem 1rem;
     .hide-menu {
       align-self: flex-end;

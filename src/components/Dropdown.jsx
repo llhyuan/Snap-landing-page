@@ -35,12 +35,12 @@ function Dropdown({ content }) {
 function Item({ content }) {
   let [icon, title] = content
   return (
-    <>
+    <div className='list-item'>
       <li>
         {icon && <img src={icon} alt={`${title} logo`} />}
-        <span>{title}</span>
+    <span><a href='#'>{title}</a></span>
       </li>
-    </>
+    </div>
   )
 }
 
