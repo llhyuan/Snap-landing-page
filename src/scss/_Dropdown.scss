@@ -17,10 +17,9 @@
     a {
       text-decoration: none;
       color: v.$color-mainText;
-      &:hover,
-      &:active {
-        color: v.$color-mainText;
-      }
+      &:hover {
+        cursor: pointer;
+      } 
     }
   }
   ul {
@@ -37,9 +36,6 @@
   .hide-background {
     background-color: inherit;
   }
-}
-.show-background {
-  color: v.$color-background;
 }
 
 @media only screen and (min-width: 955px) {
@@ -59,7 +55,7 @@
       left: -0.5rem;
       top: 0;
       border-radius: 0.8rem;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: v.$color-background;
       z-index: auto;
     }
     

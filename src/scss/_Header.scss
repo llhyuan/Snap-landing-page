@@ -15,11 +15,13 @@
   .menu {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     position: absolute;
     top: 0;
     right: 0;
     width: 50%;
+    max-width: 250px;
+    height: 100vh;
+    background-color: v.$color-background;
     padding: 1rem 1rem;
     .hide-menu {
       align-self: flex-end;
@@ -32,15 +34,16 @@
         color: v.$color-mainText;
         text-decoration: none;
         text-align: center;
-        border: 1px solid v.$color-mainText;
-        border-radius: 0.5rem;
         padding: 0.8rem 0;
         margin-bottom: 1rem;
-
         width: 100%;
-        &:hover {
-          color: v.$color-background;
-          background-color: v.$color-buttonBackground;
+        &:last-of-type {
+          border: 1px solid v.$color-mainText;
+          border-radius: 0.5rem;
+          &:hover {
+            color: v.$color-background;
+            background-color: v.$color-buttonBackground;
+          }
         }
       }
     }

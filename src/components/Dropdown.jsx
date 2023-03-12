@@ -12,7 +12,7 @@ function Dropdown({ content }) {
   }
 
   return (
-    <div className={'dropdown-item' + (!!dropdownStatus ? ' show-background' : '')}>
+    <div className='dropdown-item'>
         {!!itemList.length ? (
           <h4 onClick={handleOnClick}>
             {title}
