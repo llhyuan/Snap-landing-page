@@ -1,0 +1,78 @@
+@use './variables' as v;
+
+.main-container {
+  box-sizing: border-box;
+  width: 100%;
+  img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .article-content {
+    text-align: center;
+    h1 {
+      font-size: 2.5rem;
+      color: v.$color-title;
+      margin: 2rem auto;
+    }
+    p {
+      line-height: 1.5rem;
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+    a {
+      display: block;
+      width: fit-content;
+      padding: 0.8rem 1.2rem;
+      margin: 0 auto 2rem auto;
+      border-radius: 0.8rem;
+      text-decoration: none;
+      color: v.$color-background;
+      background-color: v.$color-buttonBackground;
+      &:active,
+      &:hover {
+        color: v.$color-buttonBackground;
+        background-color: v.$color-background;
+      }
+    }
+    .clients {
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 955px) {
+  .main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    picture {
+      width: 40%;
+      img {
+        width: 100%;
+      }
+    }
+    .article-content {
+      width: 40%;
+      text-align: left;
+      h1 {
+        font-size: 4.7rem;
+        margin: 3rem auto;
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin-bottom: 3rem;
+      }
+      a {
+        margin:0 0 3rem 0;
+      }
+    }
+  }
+}

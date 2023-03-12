@@ -1,0 +1,17 @@
+@use './variables' as v;
+
+@font-face {
+  font-family: Epilogue;
+  src: url(../assets/font/Epilogue-VariableFont_wght.ttf);
+}
+
+.app {
+  font-family: Epilogue, sans-serif;
+  font-size: 18px;
+  color: v.$color-mainText;
+  min-width: v.$size-mobile;
+  max-width: v.$size-desktop;
+  margin: 0 auto;
+
+  
+}

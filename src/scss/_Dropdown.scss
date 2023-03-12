@@ -1,0 +1,67 @@
+@use './variables' as v;
+
+.dropdown-item {
+  h4 {
+    font-weight: normal;
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+
+    img {
+      width: 1rem;
+      height: auto;
+      margin-left: 0.4rem;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+      color: v.$color-mainText;
+      &:hover,
+      &:active {
+        color: v.$color-mainText;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0 1rem;
+    li {
+      padding: 0;
+      margin-bottom: 1.5rem;
+      img {
+        margin-right: 0.7rem;
+      }
+    }
+  }
+  .hide-background {
+    background-color: inherit;
+  }
+}
+.show-background {
+  color: v.$color-background;
+}
+
+@media only screen and (min-width: 955px) {
+  .dropdown-item {
+    position: relative;
+    z-index: auto;
+    h4 {
+      position: relative;
+      padding-top: 1.5rem;
+      margin-right: 3rem;
+      z-index: 2;
+    }
+    ul {
+      margin: 0;
+      padding-top: 4rem;
+      position: absolute;
+      left: -0.5rem;
+      top: 0;
+      border-radius: 0.8rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: auto;
+    }
+    
+  }
+}

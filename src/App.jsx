@@ -1,13 +1,14 @@
-import reactLogo from './assets/react.svg'
 import './scss/_App.scss'
+import Header from './components/Header'
+import Article from './components/Article'
 
 function App() {
-
   return (
-    <div>
-     test 
+    <div className='app'>
+      <Header />
+      <Article />
     </div>
-  ); 
+  )
 }
 
 export default App
