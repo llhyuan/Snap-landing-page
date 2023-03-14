@@ -27,7 +27,7 @@ function Dropdown({ content }) {
             <a href='#'>{title}</a>
           </h4>
         )}
-        <ul className={!dropdownStatus && 'hide-background'}>{dropdownStatus && items}</ul>
+        <ul className={!dropdownStatus ? 'hide-background' : undefined}>{dropdownStatus && items}</ul>
     </div>
   )
 }

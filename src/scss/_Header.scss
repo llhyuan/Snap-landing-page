@@ -2,7 +2,6 @@
 
 .nav-container {
   box-sizing: border-box;
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,10 +16,10 @@
     flex-direction: column;
     position: absolute;
     top: 0;
+    bottom: 0;
     right: 0;
     width: 50%;
     max-width: 250px;
-    height: 100vh;
     background-color: v.$color-background;
     box-shadow: -2px 2px 5px v.$color-boxShadow;
     padding: 1rem 1rem;
