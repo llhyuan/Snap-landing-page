@@ -36,7 +36,7 @@ Add a screenshot of your solution. The easiest way to do this is to use Firefox 
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
+- Solution URL: (https://github.com/llhyuan/Snap-landing-page)
 - Live Site URL: (https://llhyuan.github.io/Snap-landing-page/)
 
 ## My process
